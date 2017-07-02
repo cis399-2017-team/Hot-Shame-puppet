@@ -1,7 +1,3 @@
-
-##TODO I'm not certain that this allows puppet to update ssh_config(6.3)
-##I'm also not certain that this is how you add ssh keys(6.4) further testing needed
-
 class sshd {
 	
 	package { 'openssh-server':
