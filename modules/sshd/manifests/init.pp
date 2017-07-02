@@ -22,6 +22,7 @@ class sshd {
 		mode => 644,
 		source => 'puppet:///modules/sshd/sshd_config',
 		require => Package['openssh-server']
+		notify => Service[sshd]
 	}
 	
 	ssh_authorized_key { 'jdolan':
