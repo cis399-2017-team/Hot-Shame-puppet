@@ -16,7 +16,7 @@ class sshd {
 	}
 	
 	file { 'sshdconfig':
-		name => 'etc/ssh/sshd_config',
+		name => '/etc/ssh/sshd_config',
 		owner => root,
 		group => root,
 		mode => 644,
