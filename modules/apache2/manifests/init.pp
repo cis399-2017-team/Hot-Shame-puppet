@@ -5,8 +5,8 @@ class apache2 {
 	}
 	
 	service { 'apache2':
-		subscribe => File[apacheconfig],
-		require => Package[apache2],
+		subscribe => File["apacheconfig"],
+		require => Package["apache2"],
 		ensure => 'running',
 		enable => 'true',
 	}
@@ -17,7 +17,7 @@ class apache2 {
 		group => root,
 		mode => 644,
 		source => 'puppet://modules/apache2/apache2.conf',
-		require => Package[apache2],
-		notify => Service[apache2],
+		require => Package["apache2"],
+		notify => Service["apache2"],
 	}
 }
