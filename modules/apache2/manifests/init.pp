@@ -8,7 +8,7 @@ class apache2 {
 		require => Package["httpd"],
 		ensure => 'running',
 		enable => 'true',
-		subscribe => File["/etc/httpd/conf/httpd.conf"],
+		#subscribe => File["/etc/httpd/conf/httpd.conf"],
 	}
 
 	file { '/etc/httpd/conf/httpd.conf':
@@ -17,6 +17,6 @@ class apache2 {
 		mode => 644,
 		source => 'puppet://modules/apache2/httpd.conf',
 		require => Package["httpd"],
-		notify => Service["httpd"],
+		#notify => Service["httpd"],
 	}
 }
