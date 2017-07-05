@@ -5,14 +5,13 @@ class apache2 {
 	}
 	
 	service { 'httpd':
-		subscribe => File["apacheconfig"],
 		require => Package["httpd"],
 		ensure => 'running',
 		enable => 'true',
+		subscribe => File["/etc/httpd/conf/httpd.conf"],
 	}
 
-	file { 'apacheconfig':
-		name => '/etc/httpd/conf/httpd.conf',
+	file { '/etc/httpd/conf/httpd.conf':
 		owner => root,
 		group => root,
 		mode => 644,
