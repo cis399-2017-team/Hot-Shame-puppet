@@ -16,3 +16,8 @@ node ip-10-0-4-8 {
     include sshd
     include apache2
 }
+
+node ip-10-0-4-84 {
+    include sshd
+    include apache2
+}
