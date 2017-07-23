@@ -8,6 +8,7 @@ node ip-10-0-4-70 {
 }
 
 node ip-10-0-4-10 {
+    #dead server
     include sshd
     include apache2
 }
@@ -15,9 +16,11 @@ node ip-10-0-4-10 {
 node ip-10-0-4-8 {
     include sshd
     include apache2
+    include html
 }
 
 node ip-10-0-4-84 {
     include sshd
     include apache2
+    include html
 }
