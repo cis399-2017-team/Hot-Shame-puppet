@@ -15,7 +15,7 @@ class apache2 {
 		owner => root,
 		group => root,
 		mode => 644,
-		source => 'puppet://modules/apache2/httpd.conf',
+		source => 'puppet:///modules/apache2/httpd.conf',
 		require => Package["httpd"],
 		#notify => Service["httpd"],
 	}
