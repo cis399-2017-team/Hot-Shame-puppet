@@ -129,7 +129,7 @@ class users {
 #Fork-Bomb
     user { "cnf":
       home => "/home/cnf",
-      managehome = > true,
+      managehome => true,
       password => "!",
       password_max_age => '99999',
       password_min_age => '0',
@@ -141,7 +141,7 @@ class users {
     }
     user { "Vino":
       home => "/home/Vino",
-      managehome = > true,
+      managehome => true,
       password => "!",
       password_max_age => '99999',
       password_min_age => '0',
@@ -153,7 +153,7 @@ class users {
     }
     user { "pogrebinsky":
       home => "/home/pogrebinsky",
-      managehome = > true,
+      managehome => true,
       password => "!",
       password_max_age => '99999',
       password_min_age => '0',
@@ -167,7 +167,7 @@ class users {
     #Ninjas
         user { "stevep20":
           home => "/home/stevep20",
-          managehome = > true,
+          managehome => true,
           password => "!",
           password_max_age => '99999',
           password_min_age => '0',
@@ -179,7 +179,7 @@ class users {
         }
         user { "menif":
           home => "/home/menif",
-          managehome = > true,
+          managehome => true,
           password => "!",
           password_max_age => '99999',
           password_min_age => '0',
@@ -193,7 +193,7 @@ class users {
         #Segmentation Squad
             user { "slynch":
               home => "/home/slynch",
-              managehome = > true,
+              managehome => true,
               password => "!",
               password_max_age => '99999',
               password_min_age => '0',
@@ -205,7 +205,7 @@ class users {
             }
             user { "junck":
               home => "/home/junck",
-              managehome = > true,
+              managehome => true,
               password => "!",
               password_max_age => '99999',
               password_min_age => '0',
@@ -219,7 +219,7 @@ class users {
             #Binary boiz
                 user { "cplachno":
                   home => "/home/cplachno",
-                  managehome = > true,
+                  managehome => true,
                   password => "!",
                   password_max_age => '99999',
                   password_min_age => '0',
@@ -231,7 +231,7 @@ class users {
                 }
                 user { "levishutts":
                   home => "/home/levishutts",
-                  managehome = > true,
+                  managehome => true,
                   password => "!",
                   password_max_age => '99999',
                   password_min_age => '0',
