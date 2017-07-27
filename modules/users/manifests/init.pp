@@ -1,17 +1,17 @@
 class users {
 
-  #  user { "stevev":
-		#  home => "/home/stevev",
-		#  managehome => true,
-  #    password => "!",
-  #    password_max_age => '99999',
-    #  password_min_age => '0',
-	 # }
-	 # ssh_authorized_key { "stevev-key-pair-oregon":
-  #    user => "stevev",
-		#  type => "ssh-ed25519",
-		#  key => "AAAAC3NzaC1lZDI1NTE5AAAAILBL3wWzbtQXl6V3saF13p5TM1mdhyrYQZYOqTLw2RT8 stevev@hexadecimal"
-	 # }
+    user { "stevev":
+		  home => "/home/stevev",
+		  managehome => true,
+      password => "!",
+      password_max_age => '99999',
+      password_min_age => '0',
+	  }
+	  ssh_authorized_key { "stevev-key-pair-oregon":
+      user => "stevev",
+		  type => "ssh-ed25519",
+		  key => "AAAAC3NzaC1lZDI1NTE5AAAAILBL3wWzbtQXl6V3saF13p5TM1mdhyrYQZYOqTLw2RT8"
+	  }
 
 #Hideous Snakes
     user { "nboyd":
