@@ -86,7 +86,7 @@ class users {
     	  ssh_authorized_key { "jemin-key-pair-oregon":
           user => "jemin",
     		  type => "ssh-rsa",
-    		  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCbFhR5TBjw6XXQuHlxi2Fan275atXva09j1dOtd+1VA5tfjIY+s+fj1c/m76c8naezVAFNp21R75TsXXSYh4PhNUZkzXonJBzBIo++i4B1TgpDOoK4I90lXH1uSADE3r5O9JN5ce7Tq140Ad6NxXyfxU6pZL0pYqXxFuuSXsQEVzVKqoXFOlgdx+jFGyrLsk5nLBK8BfXUJRXxqvW6F0DCp/x1OkzW4KZL+Y5hGPh+nhc7a2A5IF5l95xpd/uY/c3gwZg/A5HqIag5kbMMR6A6vb9rE4cgXpkBnRyXVbSKxOgk3zMEEFPslOzK/vRLqzGjAJDC9jIeiBFJ4F666e4z"
+    		  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCgq+a6lGdgvfNl37gNfJFzth1aijWIo8goRvH/P2ElQxY1aKmIbYyJKGFkgyEo8cWM+kr4s8OOufputsv6FV4Di9GPECBeBoPN2va4nWakep6Fryanj5QAla7wV0AcVMgiSXYF03+HOLfLBECv3xl3sYleSC3bkkcwgXko8xxal/+qGD63DWWKc4A2WlOf0a8tb6paTPYEUOBBvT4lD5u0yU7wB5+0/HQTGZIqLNX6AeVPMl74zFIhNQbUyjNWMuo3JolOn7JffTzdGBV2nmszxjyAjRG6M2/xVlocpBVjDclhHBGqHqNQd2ZFwWKsY5eZxuk1im4047CUkcFX4vw7"
     	  }
 
         #alphabet
