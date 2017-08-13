@@ -86,7 +86,7 @@ class users {
     	  ssh_authorized_key { "jemin-key-pair-oregon":
           user => "jemin",
     		  type => "ssh-rsa",
-    		  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCbFhR5TBjw6XXQuHlxi2Fan275atXva09j1dOtd+1VA5tfjIY+s+fj1c/m76c8naezVAFNp21R75TsXXSYh4PhNUZkzXonJBzBIo++i4B1TgpDOoK4I90lXH1uSADE3r5O9JN5ce7Tq140Ad6NxXyfxU6pZL0pYqXxFuuSXsQEVzVKqoXFOlgdx+jFGyrLsk5nLBK8BfXUJRXxqvW6F0DCp/x1OkzW4KZL+Y5hGPh+nhc7a2A5IF5l95xpd/uY/c3gwZg/A5HqIag5kbMMR6A6vb9rE4cgXpkBnRyXVbSKxOgk3zMEEFPslOzK/vRLqzGjAJDC9jIeiBFJ4F666e4z"
+    		  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCgq+a6lGdgvfNl37gNfJFzth1aijWIo8goRvH/P2ElQxY1aKmIbYyJKGFkgyEo8cWM+kr4s8OOufputsv6FV4Di9GPECBeBoPN2va4nWakep6Fryanj5QAla7wV0AcVMgiSXYF03+HOLfLBECv3xl3sYleSC3bkkcwgXko8xxal/+qGD63DWWKc4A2WlOf0a8tb6paTPYEUOBBvT4lD5u0yU7wB5+0/HQTGZIqLNX6AeVPMl74zFIhNQbUyjNWMuo3JolOn7JffTzdGBV2nmszxjyAjRG6M2/xVlocpBVjDclhHBGqHqNQd2ZFwWKsY5eZxuk1im4047CUkcFX4vw7"
     	  }
 
         #alphabet
@@ -240,5 +240,29 @@ class users {
                   user => "levishutts",
                   type => "ssh-rsa",
                   key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCQ3/5pTJx1/rMPLpSEQeXII66gdY8+xcXkAuBdlOwLHx7DzsyFNWTqSwN8Px1eNZwpQw2MQgLK2B+qrrDh8IOHa5fgL6eXvT8qnkxTILvPLGu1XBR76YidTC6a71R9xkdf0teIK99FxVu0GX13Hmh1rLPoK0egCsrcGjqbu9boTDhpajFwD44ekuc+lRv01lfJ6iDUA0Gl1xn4k7HmgFQ67Oh28G4hWVT9TpeakGX0eJ2nXMTbBOfHj8d0OFIaoKjQfhTMiRftvVoQUFnyUjj7xHyKmwJep31onZClxZJQYTpmL0QiPTpSI/J3mQ7NUrXAYXszrchMMge51mENhEQx"
+                }
+                user { "mitchm":
+                  home => "/home/mitchm",
+                  managehome => true,
+                  password => "!",
+                  password_max_age => '99999',
+                  password_min_age => '0',
+                }
+                ssh_authorized_key { "mitchm-key-pair-oregon":
+                  user => "mitchm",
+                  type => "ssh-rsa",
+                  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQConOmMmuISa5E1L6rXpkEXibk7eNYwCBiNbHgHphIjDDk9cQx8HS43+r2oWyt5TJ8Zf872QTY6q0Jt69daMN5Z5W0WR2UDngcdHwxCbJv0a9QH/vraVhchHRXtt+ci4ja8T1snno9v7mjw8tzl3x3weKr3WAs1rbmdXAAec0+NsH/44h4aJX3W1QGXWRJ9eoiP/MTSk72+H1vb3IIm+WVioqKJkhuzmz+cHmJiKyluN4WueJpLhBiLYcZocn64Zzn43GvaGxhOEiFfJ87kLolwMBWzaYCaL+gLZRKFsa6v40l4TVfWOYhgnLotDe70P4/7JJABsaPrMyfLIOp6d905"
+                }
+                user { "aziz94shh":
+                  home => "/home/aziz94shh",
+                  managehome => true,
+                  password => "!",
+                  password_max_age => '99999',
+                  password_min_age => '0',
+                }
+                ssh_authorized_key { "aziz94shh-key-pair-oregon":
+                  user => "aziz94shh",
+                  type => "ssh-rsa",
+                  key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQC8lqY5aml/XobpKeMnjHVlmTlz2d3QxP6AVSrPCvOjzWz9T0UN/llnedRoU9CpX6hgash5danUijlkhtX6Aiaqj/vWG6JOxddZOr/+ln20B6GxKFi8yy59lSGwhqfLATSxKu4//DeAj+GIExw2x6LDY0qt1a0047B4elIhBE+cHN2QvayOxwb0lP4ub5yaNChC/LO2xFU2rgvnEfANqWeeqPtHuQVaSsDdwpkiYIk4rhmX4q2XVv+ZLgJyEYSNm7QRx/cotcmq37iWkKTmq/tlpYDiSLSitUqBdMwz73yQ8uhDR0uIfVrdkilIdF7edEsHIUoqtEU0QpzQHi1nh3NH"
                 }
 }
