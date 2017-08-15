@@ -1,5 +1,5 @@
 """
-Count the number of occurrences of each major code in a file.
+Creates Puppet module of authorized users from provided list of usernames and ssh-rsa keys
 Authors: Holden Oullette, James Dolan
 
 Input is a file containing usernames on one line and their respective ssh-rsa
