@@ -13,7 +13,7 @@ import os
 
 users = { } # we want a dictionary with the key being the username and the ssh-key being the value
 			# assigned globally so we can access it in other functions and we can guarantee parse_users will be called
-
+directory = "modules/users/manifests"
 
 def parse_users(users_file):
 	"""
@@ -35,7 +35,7 @@ def generate_output():
 	"""
 	This function generates the raw output of ALL users, writes to init.pp file
 	"""
-	with open('modules/test_users/manifest/init.pp', 'w') as f:
+	with open(directory+'/init.pp', 'w') as f:
 		f.write("class users {\n") # Start of the init.pp file
 		for username, ssh_key in users.items():
 			f.write('\tuser { "%s":\n' % str(username))
@@ -56,8 +56,8 @@ def establish_file_structure():
 	if it exists, it will simply update the file, if not, it will make the proper folders.
 	It assumes script will run in proper location (i.e. Puppet root directory)
 	"""
-	if not os.path.exists("modules/test_users/manifest"):
-		os.makedirs("modules/test_users/manifest")
+	if not os.path.exists(directory):
+		os.makedirs(directory)
 
 def main( ):
 	"""
