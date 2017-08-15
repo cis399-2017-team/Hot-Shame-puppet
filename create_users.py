@@ -1,11 +1,11 @@
 """
 Count the number of occurrences of each major code in a file.
 Authors: Holden Oullette, James Dolan
-Credits: #FIXME
 
-Input is a file(s)
+Input is a file containing usernames on one line and their respective ssh-rsa
+key on the following line
 
-Output is a
+Output is a working users Puppet module
 """
 
 import argparse
@@ -72,7 +72,6 @@ def main( ):
 	parse_users(users_file)
 	establish_file_structure() # has to be before generate_output as it depends on file structure existence
 	generate_output()
-
 
 if __name__ == "__main__":
 	main( )
