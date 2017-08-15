@@ -9,15 +9,17 @@ Output is a
 """
 
 import argparse
+import os
 
-users = { }
+users = { } # we want a dictionary with the key being the username and the ssh-key being the value
+			# assigned globally so we can access it in other functions and we can guarantee parse_users will be called
+
 
 def parse_users(users_file):
 	"""
-	Parses users from users_file
+	Parses users from users_file and stores them to global dictionary
 	"""
-	#global users = { } # we want a dictionary with the key being the username and the ssh-key being the value
-						# assigned globally so we can access it in other functions and we can guarantee parse_users will be called
+
 	on_username = True # true because we expect to start file on a username
 	cur_user = "" # used for saving the current username between line iterations
 
@@ -33,9 +35,8 @@ def generate_output():
 	"""
 	This function generates the raw output of ALL users, writes to init.pp file
 	"""
-	with open('test.txt', 'w') as f:
-		# Start the beginning of the init.pp file
-		f.write("class users {\n")
+	with open('modules/test_users/manifest/init.pp', 'w') as f:
+		f.write("class users {\n") # Start of the init.pp file
 		for username, ssh_key in users.items():
 			f.write('\tuser { "%s":\n' % str(username))
 			f.write('\t\thome => "/home/%s",\n' % str(username))
@@ -47,7 +48,7 @@ def generate_output():
 			f.write('\t\tuser => "%s",\n' % str(username))
 			f.write('\t\ttype => "ssh-rsa",\n')
 			f.write('\t\tkey => "%s"\n\t}\n' % str(ssh_key))
-		f.write("}")
+		f.write("}") # End of the init.pp file
 
 def establish_file_structure():
 	"""
@@ -55,6 +56,8 @@ def establish_file_structure():
 	if it exists, it will simply update the file, if not, it will make the proper folders.
 	It assumes script will run in proper location (i.e. Puppet root directory)
 	"""
+	if not os.path.exists("modules/test_users/manifest"):
+		os.makedirs("modules/test_users/manifest")
 
 def main( ):
 	"""
@@ -67,6 +70,7 @@ def main( ):
 	args = parser.parse_args()  # gets arguments from command line
 	users_file = args.users
 	parse_users(users_file)
+	establish_file_structure() # has to be before generate_output as it depends on file structure existence
 	generate_output()
 
 
