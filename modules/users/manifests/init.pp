@@ -4,8 +4,8 @@ class users {
 		  home => "/home/stevev",
 		  managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
 	  }
 	  ssh_authorized_key { "stevev-key-pair-oregon":
       user => "stevev",
@@ -18,8 +18,8 @@ class users {
       home => "/home/nboyd",
       managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
     }
     ssh_authorized_key { "nboyd-key-pair-oregon":
       user => "nboyd",
@@ -30,8 +30,8 @@ class users {
 		  home => "/home/kaschaefer",
 		  managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
 	  }
 	  ssh_authorized_key { "kaschaefer-key-pair-oregon":
       user => "kaschaefer",
@@ -42,8 +42,8 @@ class users {
 		  home => "/home/cconklin",
 		  managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
 	  }
 	  ssh_authorized_key { "cconklin-key-pair-oregon":
       user => "cconklin",
@@ -56,8 +56,8 @@ class users {
           home => "/home/jsheabia",
           managehome => true,
           password => "!",
-          password_max_age => '99999',
-          password_min_age => '0',
+          password_max_age => "99999",
+          password_min_age => "0",
         }
         ssh_authorized_key { "jsheabia-key-pair-oregon":
           user => "jsheabia",
@@ -68,8 +68,8 @@ class users {
     		  home => "/home/dholstege",
     		  managehome => true,
           password => "!",
-          password_max_age => '99999',
-          password_min_age => '0',
+          password_max_age => "99999",
+          password_min_age => "0",
     	  }
     	  ssh_authorized_key { "dholstege-key-pair-oregon":
           user => "dholstege",
@@ -80,8 +80,8 @@ class users {
     		  home => "/home/jemin",
     		  managehome => true,
           password => "!",
-          password_max_age => '99999',
-          password_min_age => '0',
+          password_max_age => "99999",
+          password_min_age => "0",
     	  }
     	  ssh_authorized_key { "jemin-key-pair-oregon":
           user => "jemin",
@@ -94,8 +94,8 @@ class users {
               home => "/home/nsato10",
               managehome => true,
               password => "!",
-              password_max_age => '99999',
-              password_min_age => '0',
+              password_max_age => "99999",
+              password_min_age => "0",
             }
             ssh_authorized_key { "nsato10-key-pair-oregon":
               user => "nsato10",
@@ -106,8 +106,8 @@ class users {
               home => "/home/loganr",
               managehome => true,
               password => "!",
-              password_max_age => '99999',
-              password_min_age => '0',
+              password_max_age => "99999",
+              password_min_age => "0",
             }
             ssh_authorized_key { "loganr-key-pair-oregon":
               user => "loganr",
@@ -118,8 +118,8 @@ class users {
               home => "/home/mheb",
               managehome => true,
               password => "!",
-              password_max_age => '99999',
-              password_min_age => '0',
+              password_max_age => "99999",
+              password_min_age => "0",
             }
             ssh_authorized_key { "mheb-key-pair-oregon":
               user => "mheb",
@@ -131,8 +131,8 @@ class users {
       home => "/home/cnf",
       managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
     }
     ssh_authorized_key { "cnf-key-pair-oregon":
       user => "cnf",
@@ -143,8 +143,8 @@ class users {
       home => "/home/Vino",
       managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
     }
     ssh_authorized_key { "Vino-key-pair-oregon":
       user => "Vino",
@@ -155,8 +155,8 @@ class users {
       home => "/home/pogrebinsky",
       managehome => true,
       password => "!",
-      password_max_age => '99999',
-      password_min_age => '0',
+      password_max_age => "99999",
+      password_min_age => "0",
     }
     ssh_authorized_key { "pogrebinsky-key-pair-oregon":
       user => "pogrebinsky",
@@ -169,8 +169,8 @@ class users {
           home => "/home/stevep20",
           managehome => true,
           password => "!",
-          password_max_age => '99999',
-          password_min_age => '0',
+          password_max_age => "99999",
+          password_min_age => "0",
         }
         ssh_authorized_key { "stevep20-key-pair-oregon":
           user => "stevep20",
@@ -181,8 +181,8 @@ class users {
           home => "/home/menif",
           managehome => true,
           password => "!",
-          password_max_age => '99999',
-          password_min_age => '0',
+          password_max_age => "99999",
+          password_min_age => "0",
         }
         ssh_authorized_key { "menif-key-pair-oregon":
           user => "menif",
@@ -195,8 +195,8 @@ class users {
               home => "/home/slynch",
               managehome => true,
               password => "!",
-              password_max_age => '99999',
-              password_min_age => '0',
+              password_max_age => "99999",
+              password_min_age => "0",
             }
             ssh_authorized_key { "slynch-key-pair-oregon":
               user => "slynch",
@@ -207,8 +207,8 @@ class users {
               home => "/home/junck",
               managehome => true,
               password => "!",
-              password_max_age => '99999',
-              password_min_age => '0',
+              password_max_age => "99999",
+              password_min_age => "0",
             }
             ssh_authorized_key { "junck-key-pair-oregon":
               user => "junck",
@@ -221,8 +221,8 @@ class users {
                   home => "/home/cplachno",
                   managehome => true,
                   password => "!",
-                  password_max_age => '99999',
-                  password_min_age => '0',
+                  password_max_age => "99999",
+                  password_min_age => "0",
                 }
                 ssh_authorized_key { "cplachno-key-pair-oregon":
                   user => "cplachno",
@@ -233,8 +233,8 @@ class users {
                   home => "/home/levishutts",
                   managehome => true,
                   password => "!",
-                  password_max_age => '99999',
-                  password_min_age => '0',
+                  password_max_age => "99999",
+                  password_min_age => "0",
                 }
                 ssh_authorized_key { "levishutts-key-pair-oregon":
                   user => "levishutts",
@@ -245,8 +245,8 @@ class users {
                   home => "/home/mitchm",
                   managehome => true,
                   password => "!",
-                  password_max_age => '99999',
-                  password_min_age => '0',
+                  password_max_age => "99999",
+                  password_min_age => "0",
                 }
                 ssh_authorized_key { "mitchm-key-pair-oregon":
                   user => "mitchm",
@@ -257,8 +257,8 @@ class users {
                   home => "/home/aziz94shh",
                   managehome => true,
                   password => "!",
-                  password_max_age => '99999',
-                  password_min_age => '0',
+                  password_max_age => "99999",
+                  password_min_age => "0",
                 }
                 ssh_authorized_key { "aziz94shh-key-pair-oregon":
                   user => "aziz94shh",
