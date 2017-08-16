@@ -7,7 +7,7 @@ This is our final project for CIS399 system administration.  The program takes a
 
 ### Prerequisites
 
-The only prerequisite is to have puppet installed.
+You will need Python3.x and puppet to be installed.
 
 ### Installing
 
@@ -25,7 +25,7 @@ key2
 ```
 To run simply execute:
 ```
-./create_users.py user_file.txt
+python create_users.py user_file.txt
 ```
 ## Authors
 
