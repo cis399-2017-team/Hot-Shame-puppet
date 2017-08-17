@@ -67,11 +67,16 @@ def main( ):
 	parser = argparse.ArgumentParser(description="Create a user module file containing all user information")
 	parser.add_argument('users', type=argparse.FileType('r'),
 						help="A text file containing usernames and ssh keys, one username followed by ssh-key on following file.")
+	parser.add_argument('-A', '--Admin', help='Creates users with admin privileges.', action='store_true')
 	args = parser.parse_args()  # gets arguments from command line
 	users_file = args.users
 	parse_users(users_file)
 	establish_file_structure() # has to be before generate_output as it depends on file structure existence
-	generate_output()
+	if args.Admin:
+		'''create admin users'''
+		return 0
+	else:
+		generate_output()
 
 if __name__ == "__main__":
 	main( )

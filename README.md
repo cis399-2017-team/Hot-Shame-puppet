@@ -25,7 +25,7 @@ key2
 ```
 To run simply execute:
 ```
-python create_users.py user_file.txt
+python3 create_users.py user_file.txt
 ```
 ## Authors
 
