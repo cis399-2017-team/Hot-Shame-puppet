@@ -23,14 +23,14 @@ key
 username2
 key2
 ```
-There is also an option --Admin to create admin users.  This will add the users to the admin group.
+There is also an option '''--Admin''' to create admin users.  This will add the users to the admin group.
 
 To run simply execute:
 ```
 python3 create_users.py [-A] user_file.txt
 ```
 
-##Future Plans
+## Future Plans
 
 In the future we would like to support adding users to which ever group you like.  The program could also create the group, if it is not already created.
 
