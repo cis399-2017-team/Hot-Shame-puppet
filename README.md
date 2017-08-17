@@ -23,7 +23,7 @@ key
 username2
 key2
 ```
-There is also an option '''--Admin''' to create admin users.  This will add the users to the admin group.
+There is also an option ```[--Admin | -A]``` to create admin users.  This will add the users to the admin group.
 
 To run simply execute:
 ```
