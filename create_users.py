@@ -50,6 +50,26 @@ def generate_output():
 			f.write('\t\tkey => "%s"\n\t}\n' % str(ssh_key))
 		f.write("}") # End of the init.pp file
 
+def generate_output_admin():
+	"""
+	This function generates the raw output of ALL users with admin priv, writes to init.pp file
+	"""
+	with open(directory+'/init.pp', 'w') as f:
+		f.write("class users {\n") # Start of the init.pp file
+		for username, ssh_key in users.items():
+			f.write('\tuser { "%s":\n' % str(username))
+			f.write('\t\thome => "/home/%s",\n' % str(username))
+			f.write('\t\tmanagehome => true,\n')
+			f.write('\t\tgid => "admin",\n')
+			f.write('\t\tpassword => "!",\n')
+			f.write('\t\tpassword_max_age => "99999",\n')
+			f.write('\t\tpassword_min_age => "0",\n\t}\n')
+			f.write('\tssh_authorized_key { "%s-key-pair-oregon":\n' % str(username))
+			f.write('\t\tuser => "%s",\n' % str(username))
+			f.write('\t\ttype => "ssh-rsa",\n')
+			f.write('\t\tkey => "%s"\n\t}\n' % str(ssh_key))
+		f.write("}") # End of the init.pp file
+
 def establish_file_structure():
 	"""
 	This function checks for the existence of file structure for the users module,
@@ -74,7 +94,7 @@ def main( ):
 	establish_file_structure() # has to be before generate_output as it depends on file structure existence
 	if args.Admin:
 		'''create admin users'''
-		return 0
+		generate_output_admin()
 	else:
 		generate_output()
 

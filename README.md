@@ -7,7 +7,7 @@ This is our final project for CIS399 system administration.  The program takes a
 
 ### Prerequisites
 
-You will need Python3.x and puppet to be installed.
+You will need Python3.x and puppet to be installed.  If you wish to create admin users, you will need to already have an admin group set up.
 
 ### Installing
 
@@ -23,10 +23,17 @@ key
 username2
 key2
 ```
+There is also an option --Admin to create admin users.  This will add the users to the admin group.
+
 To run simply execute:
 ```
-python3 create_users.py user_file.txt
+python3 create_users.py [-A] user_file.txt
 ```
+
+##Future Plans
+
+In the future we would like to support adding users to which ever group you like.  The program could also create the group, if it is not already created.
+
 ## Authors
 
 * **Holden Oullette**
