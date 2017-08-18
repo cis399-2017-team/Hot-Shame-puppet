@@ -7,7 +7,7 @@ This is our final project for CIS399 system administration.  The program takes a
 
 ### Prerequisites
 
-You will need Python3.x and puppet to be installed.  If you wish to create admin users, you will need to already have an admin group set up.
+You will need Python3.x and puppet2.7.25 to be installed.  If you wish to create admin users, you will need to already have an admin group set up.
 
 ### Installing
 
